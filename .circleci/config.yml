@@ -12,7 +12,8 @@ jobs:
       version: "3.6"
     steps:
       - orb/setup
-      - run: inv integration
+      - run: inv ci.make-sudouser
+      - run: inv ci.sudo-run 'inv integration'
       - orb/debug
 
 
