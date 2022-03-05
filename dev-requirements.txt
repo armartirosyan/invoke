@@ -1,6 +1,8 @@
 # Install self before invocations to save a bit of time
 -e .
 # Invocations, for all sorts of things
+# TODO: REMOVEME
+/invocations
 invocations==2.4.0
 # Coverage!
 coverage==4.5.4

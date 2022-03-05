@@ -52,6 +52,10 @@ def test(
 # solved (see other TODOs). For now this is just a copy/paste/modify.
 @task(help=test.help)
 def integration(c, opts=None, pty=True):
+    # TODO: uhh am I skipping this kinda thing for paramiko and invocations
+    # too?
+    # TODO: specifically, the conflation of "coverage" with "run all test
+    # suites"
     """
     Run the integration test suite. May be slow!
     """
@@ -76,6 +80,7 @@ def coverage(c, report="term", opts="", codecov=False):
     # TODO: allow coverage() to just look up the nearby-by-namespace-attachment
     # test() instead of hardcoding its own test or doing it this way with an
     # arg.
+    # TODO: um what about integration?!?!
     return coverage_(c, report=report, opts=opts, tester=test, codecov=codecov)
 
 
