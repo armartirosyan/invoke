@@ -1,7 +1,7 @@
 - id: invoke
   name: invoke
   description: "Invoke: task execution tool."
-  entry: black
+  entry: invoke
   language: python
   minimum_pre_commit_version: 2.9.2
   require_serial: true
