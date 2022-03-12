@@ -3,6 +3,6 @@
   description: "Invoke: task execution tool."
   entry: invoke
   language: python
-  minimum_pre_commit_version: 2.9.2
-  require_serial: true
-  types_or: [python, pyi]
+#   minimum_pre_commit_version: 2.9.2
+#   require_serial: true
+#   types_or: [python, pyi]
